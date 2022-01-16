@@ -9,6 +9,9 @@ const port = process.env.PORT || 8080;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+var cors = require('cors');
+app.use(cors())
+
 app.get("/ping", (req, res) => {
   res.send("pong, server is alive!");
 });
