@@ -8,7 +8,7 @@ export default function NavbarComponent() {
     return (
             <Navbar bg="primary" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/">VanDons</Navbar.Brand>
+                    <Navbar.Brand href="/">VanDonates</Navbar.Brand>
                     <Nav className="me-auto">
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/Discover">Discover</Nav.Link>

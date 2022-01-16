@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { getAPI } from "./service";
 import { Route, Switch, BrowserRouter } from 'react-router-dom';

@@ -3,22 +3,15 @@ import Container from 'react-bootstrap/esm/Container';
 import NavbarComponent from '../components/Navbar';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import './styles.css';
+import Map from '../components/Map'
 
 export default function Discover() {      
-    const mapStyles = {        
-        height: "55vh",
-        width: "100%"};
-      
-    const defaultCenter = {
-        lat: 49.246292, lng: -123.116226
-    }
 
     return (
         <div>
             <NavbarComponent/>
-            <div className="top-list">
+            <div className="top-height">
                 <Container align="center">
                     <Row height="300px">
                         <Col>1 of 3
@@ -29,14 +22,7 @@ export default function Discover() {
                     </Row>
                 </Container>
             </div>
-            <LoadScript
-                    googleMapsApiKey='AIzaSyC1rycEYIqN7rGl1UDg89FC91T6mn1abUw'>
-                <GoogleMap
-                    mapContainerStyle={mapStyles}
-                    zoom={13}
-                    center={defaultCenter}
-                />
-            </LoadScript>
+            <Map/>
         </div>
     )
 }
