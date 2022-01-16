@@ -5,7 +5,7 @@ export default function Map() {
     const mapStyles = {        
         height: "50vh",
         width: "100%"};
-      
+
     const defaultCenter = {
         lat: 49.246292, lng: -123.116226
     }
