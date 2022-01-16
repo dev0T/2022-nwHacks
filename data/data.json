@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Dress for Success Vancouver",
+    "description": "Dress for Success Vancouver is a community empowering women into the workforce by providing them with professional attire, career services, and skills development programs.",
+    "street": "675 West Hastings Street",
+    "city": "Vancouver",
+    "state": "BC",
+    "zipCode": "V6B 1N9",
+    "country": "Canada",
+    "classification": "Charitable Organization",
+    "deductibility": "Contributions are deductible.",
+    "acceptingDonations": "1",
+    "latitude": "49.28525666244609",
+    "longitude": "-123.11351613029657"
+  },
+  {
+    "name": "Vancouver Chinatown Foundation",
+    "description": "The Vancouver Chinatown Foundation is a registered charity founded in 2011 to honour a culture and community established in Vancouver more than 100 years ago.",
+    "street": "Third Floor, 127 East Pender Street",
+    "city": "Vancouver",
+    "state": "BC",
+    "zipCode": "V6A 1T6",
+    "country": "Canada",
+    "classification": "Charitable Organization",
+    "deductibility": "Contributions are deductible.",
+    "acceptingDonations": "1",
+    "latitude": "49.28054189523344",
+    "longitude": "-123.10125317212379"
+  },
+  {
+    "name": "Greater Vancouver Community Services Society",
+    "description": "The Greater Vancouver Community Services Society support the independence and well-being of the elderly, people with disabilities, and others who require support to retain or regain health and autonomy.",
+    "street": "320-1212 West Broadway",
+    "city": "Vancouver",
+    "state": "BC",
+    "zipCode": "V6H 3V1",
+    "country": "Canada",
+    "classification": "Charitable Organization",
+    "deductibility": "Contributions are deductible.",
+    "acceptingDonations": "1",
+    "latitude": "49.26330389624016",
+    "longitude": "-123.13183157268763"
+  }
+]
