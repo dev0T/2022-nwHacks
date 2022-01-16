@@ -13,7 +13,7 @@ app.get("/ping", (req, res) => {
   res.send("pong, server is alive!");
 });
 
-app.post("/charities", async (req, res) => {
+app.get("/charities", async (req, res) => {
   try {
     const charities = await getAll();
     res.send(charities);
@@ -22,7 +22,7 @@ app.post("/charities", async (req, res) => {
   }
 });
 
-app.post("/charities/:classification", async (req, res) => {
+app.get("/charities/:classification", async (req, res) => {
   try {
     const charities = await getByClassification(req.params.classification);
     res.send(charities);
