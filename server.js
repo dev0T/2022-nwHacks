@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
-const { getByClassification } = require("./src/service.js");
+const { getByClassification, getByName, getAll } = require("./src/service.js");
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -13,6 +13,15 @@ app.get("/ping", (req, res) => {
   res.send("pong, server is alive!");
 });
 
+app.post("/charities", async (req, res) => {
+  try {
+    const charities = await getAll();
+    res.send(charities);
+  } catch (error) {
+    console.log(error);
+  }
+});
+
 app.post("/charities/:classification", async (req, res) => {
   try {
     const charities = await getByClassification(req.params.classification);
@@ -22,6 +31,14 @@ app.post("/charities/:classification", async (req, res) => {
   }
 });
 
+app.post("/charities/:name", async (req, res) => {
+  try {
+    const charities = await getByName(req.params.name);
+    res.send(charities);
+  } catch (error) {
+    console.log(error);
+  }
+});
 
 app.use(express.static(path.join(__dirname, "client/public")));
 
