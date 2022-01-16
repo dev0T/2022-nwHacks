@@ -25,7 +25,7 @@ app.get("/charities", async (req, res) => {
   }
 });
 
-app.get("/charities/:classification", async (req, res) => {
+app.get("/charities/category/:classification", async (req, res) => {
   try {
     const charities = await getByClassification(req.params.classification);
     res.send(charities);
@@ -34,7 +34,7 @@ app.get("/charities/:classification", async (req, res) => {
   }
 });
 
-app.post("/charities/:name", async (req, res) => {
+app.get("/charities/name/:name", async (req, res) => {
   try {
     const charities = await getByName(req.params.name);
     res.send(charities);
