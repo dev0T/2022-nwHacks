@@ -7,14 +7,18 @@ exports.getAll = () => {
 };
 
 exports.getByName = (name) => {
-  const charities = data.filter((record) => record.name == name);
+  const filter = name.toLowerCase();
+  const charities = data.filter((item) =>
+    item.name.toLowerCase().includes(filter)
+  );
 
   return charities;
 };
 
 exports.getByClassification = (classification) => {
-  const charities = data.filter(
-    (record) => record.classification == classification
+  const filter = classification.toLowerCase();
+  const charities = data.filter((item) =>
+    item.name.toLowerCase().includes(filter)
   );
 
   return charities;
